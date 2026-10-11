@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width:100%;
+            height: 70vh;
+            border: 3px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: lime;
+
+        }
+        .submain{
+            width: 90%;
+            height: 78%;
+            border: 3px solid black;
+            font-size: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+
+        }
+        .item{
+            width: 120px;
+            height:120px;
+            border: 3px solid blue;
+            margin: 5px;
+            FONT-SIZE: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 10px 10px 0px maroon;
+            border-radius: 20px;
+            background-color: yellow;
+            transition: all 1000ms ease-in-out;
+        }
+        /*Rotate*/
+         .rotate>.item:nth-child(1):hover{
+            transform: rotateX(180deg);
+        }
+        .rotate>.item:nth-child(2):hover{
+            transform: rotateY(180deg);
+        }
+        .rotate>.item:nth-child(3):hover{
+            transform: rotateZ(180deg);
+        }
+        .rotate>.item:nth-child(4):hover{
+            transform: rotateX(180deg) rotateY(240deg) rotateZ(360deg);
+        }
+        /*scale=>(x and y)*/
+        .scale>.item:nth-child(1):hover{
+            transform: scaleX(1.4);
+        }
+        .scale>.item:nth-child(2):hover{
+            transform: scaleY(1.4);
+        }
+        .scale>.item:nth-child(3):hover{
+            transform: scale(0.6);
+        }
+        .scale>.item:nth-child(4):hover{
+            transform: scale(1.6);
+        }
+        .skew>.item:nth-child(1):hover{
+            transform: skewX(180deg);
+        }
+        .skew>.item:nth-child(2):hover{
+            transform: skewY(180deg);
+        }
+        .skew>.item:nth-child(3):hover{
+            transform: skew(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p>ROTATE</p>
+        <div class="submain rotate">
+            <div class="item">X</div>
+            <div class="item">Y</div>
+            <div class="item">Z</div>
+            <div class="item">X,Y,Z</div>
+        </div>
+         <p>Scale</p>
+        <div class="submain scale">
+            <div class="item">X</div>
+            <div class="item">Y</div>
+           <div class="item">X,Y</div>
+        </div>
+        <p>Skew</p>
+        <div class="submain skew">
+            <div class="item">X</div>
+            <div class="item">Y</div>
+            <div class="item">X,Y</div>
+        </div>
+    </div>
+    
+</body>
+</html>

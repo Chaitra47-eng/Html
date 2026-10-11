@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .wrap{
+            width: 20%;
+            height: 280px;
+            background-color: aqua;
+            border: 4px solid black;
+            animation-name: increase;
+            animation-duration: 1000ms;
+            animation-delay:500ms ;
+            animation-iteration-count: finite;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-direction: alternate;
+        }
+        @keyframes increase{
+            from{
+                /* width: 0%; */
+                /* transform: scale(0.18); */
+                left: 30px;
+            }
+            to{
+                /* width: 100%; */
+                /* transform: scale(1.7); */
+                left: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="wrap"></div>
+    </div>
+</body>
+</html>
