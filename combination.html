@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*descedent sel*/
+        .box-1 h1{
+            background-color: black;
+            color: orange;
+        }
+        /*child-sel -(>)*/
+        .box-1>p{
+            font-size: 3rem;
+            background-color:aquamarine;
+        }
+        /*Adjacent sibling sel-(+)*/
+        .sibling-1+h2{
+            background-color: yellow;
+           
+        }
+        /*General sibling sel-(~)*/
+           .sibling-1~h1{
+            background-color: yellow; */
+           }
+            
+    </style>
+</head>
+<body>
+    <div class="box-1">
+        <h1>Hello,Welcome</h1>
+        <h1>Python</h1>
+        <h1>web-tech</h1>
+        <div>
+            <h1>sql</h1>
+            <h1>Django</h1>
+            <p>This is a paragragh in the div as a grand child</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, harum neque adipisci cumque quos quisquam? Autem perspiciatis pariatur maiores reiciendis, molestias repudiandae enim consequatur esse fuga laborum magni consequuntur nihil? Beatae deleniti reprehenderit culpa!</p>
+    </div>
+    <div class="box-2">
+        <h1 class="sibling-1">Hello,Welcome</h1>
+        <h2>sibling - 2</h2>
+        <h1>Python</h1>
+        <h1>web-tech</h1>
+        <div>
+            <h1>sql</h1>
+            <h1>Django</h1>
+            <p>This is a paragragh in the div as a grand child</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, harum neque adipisci cumque quos quisquam? Autem perspiciatis pariatur maiores reiciendis, molestias repudiandae enim consequatur esse fuga laborum magni consequuntur nihil? Beatae deleniti reprehenderit culpa!</p>
+    </div>
+    
+</body>
+</html>
